@@ -29,6 +29,6 @@
   1. Napisati funkcije koje korištenjem knjižnice `ipycanvas` i njegove funkcije
      [`Canvas`](https://ipycanvas.readthedocs.io/en/latest/basic_usage.html#) na
      grafu nacrtati:
-    1. 3x3 križić kružić polje
-    1. Crveni križić s proizvoljnom položajem unutar 3x3 polja
-    1. Plavi kružić s proizvoljnim položajem unutar 3x3 polja
+      1. 3x3 križić kružić polje
+      1. Crveni križić s proizvoljnom položajem unutar 3x3 polja
+      1. Plavi kružić s proizvoljnim položajem unutar 3x3 polja
