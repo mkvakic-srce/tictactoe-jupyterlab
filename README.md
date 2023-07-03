@@ -22,13 +22,19 @@
 
   1. Pripremiti okolinu za razvoj interaktivne igre korištenjem virtualnog okruženja [venv](https://docs.python.org/3/library/venv.html). Virtualnu okolinu imena `krizic_kruzic` treba napraviti u direktoriju u kojem
   će se razvijati sve naknadne skripte.
-  1. Aktivirati virtualnu okolinu `krizic_kruzic`, instalirati knjižnice `jupyterlab`, `ipycanvas`,
+      1. Aktivirati virtualnu okolinu `krizic_kruzic`, instalirati knjižnice `jupyterlab`, `ipycanvas`,
   `ipywidgets` i testirati njihovu instalaciju unutar jupyter notebooka imena `test.ipynb` (npr. `import ipycanvas`)
   1. Napisati funkcije koje korištenjem knjižnice `ipycanvas` i objekta
      [`Canvas`](https://ipycanvas.readthedocs.io/en/latest/basic_usage.html#) na
      definiranom objektu crtaju:
       1. 3x3 križić kružić polje
       1. Crveni križić ili plavi kružić s proizvoljnim položajem
+      1. Broj bodova za križić i kružić, koji su ispisani pored polja u manjem obliku
   1. Napisati funkciju koja [interaktivno](https://ipycanvas.readthedocs.io/en/latest/events.html)
-  i naizmjenično iscrtava križić ili kružić ovisno o položaju klika, s prethodno
-  definiranim funkcijama na proizvoljno nacrtanom canvas objektu
+  iscrtava križić ili kružić ovisno o položaju klika na proizvoljno nacrtanom `Canvas` objektu koji već
+  sadrži 3x3 križić-kružić polje. Funkcija mora:
+      1. Naizmjenice iscrtavati križić ili kružić
+      1. Ucrtavati križić ili kružić u sredinu izabranog polja, osim ako već odprije
+         nije nešto ucrtano
+      1. Ponovno iscrta prazno 3x3 polje ako se prethodno ispune sva ili ostvare uvjeti za
+         pobjedu jednog od igrača
